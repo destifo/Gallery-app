@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gallery_app/data/models/image_meta.dart';
 
@@ -18,7 +19,9 @@ class ImageDetail extends StatelessWidget {
             Card(
               child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
-                  child: Image.network(image.downloadUrl)),
+                  child: CachedNetworkImage(
+                    imageUrl: image.downloadUrl,
+                  )),
             ),
             Text("Author: ${image.author}"),
             Text("Width: ${image.width}"),
