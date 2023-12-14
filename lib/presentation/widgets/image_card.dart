@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gallery_app/data/models/image_meta.dart';
 import 'package:gallery_app/presentation/widgets/image_detail.dart';
@@ -38,8 +39,8 @@ class ImageCard extends StatelessWidget {
               aspectRatio: (image.height / image.width) * (1.3),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(15),
-                child: Image.network(
-                  image.downloadUrl,
+                child: CachedNetworkImage(
+                  imageUrl: image.downloadUrl,
                   fit: BoxFit.fill,
                 ),
               ),
