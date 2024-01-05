@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:gallery_app/data/models/image_meta.dart';
-import 'package:gallery_app/presentation/widgets/image_detail.dart';
+import 'package:gallery_app/features/gallery/data/models/image_meta.dart';
+import 'package:gallery_app/features/gallery/presentation/widgets/image_detail.dart';
 
 class ImageCard extends StatelessWidget {
   const ImageCard({super.key, required this.image});

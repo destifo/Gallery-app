@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gallery_app/data/datasource/gallery_remote_data_source.dart';
-import 'package:gallery_app/presentation/bloc/image_events.dart';
-import 'package:gallery_app/presentation/bloc/image_states.dart';
+import 'package:gallery_app/features/gallery/data/datasource/gallery_remote_data_source.dart';
+import 'package:gallery_app/features/gallery/presentation/bloc/image_events.dart';
+import 'package:gallery_app/features/gallery/presentation/bloc/image_states.dart';
 
 class ImageBloc extends Bloc<ImageEvent, ImageState> {
   final GalleryRemoteDataSource repo = GalleryRemoteDataSource();

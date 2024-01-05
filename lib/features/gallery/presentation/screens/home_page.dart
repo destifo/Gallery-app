@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:gallery_app/data/models/image_meta.dart';
-import 'package:gallery_app/presentation/bloc/image_bloc.dart';
-import 'package:gallery_app/presentation/bloc/image_states.dart';
-import 'package:gallery_app/presentation/widgets/image_card.dart';
+import 'package:gallery_app/features/gallery/data/models/image_meta.dart';
+import 'package:gallery_app/features/gallery/presentation/bloc/image_bloc.dart';
+import 'package:gallery_app/features/gallery/presentation/bloc/image_states.dart';
+import 'package:gallery_app/features/gallery/presentation/widgets/image_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -33,7 +33,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: BlocBuilder<ImageBloc, ImageState>(
         builder: (context, state) {
-          print(state);
           if (state is LoadingImages) {
             return const Center(child: CircularProgressIndicator());
           } else if (state is ImagesLoaded) {

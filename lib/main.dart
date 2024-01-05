@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gallery_app/presentation/bloc/image_bloc.dart';
-import 'package:gallery_app/presentation/bloc/image_events.dart';
-import 'package:gallery_app/presentation/bloc/image_states.dart';
-import 'package:gallery_app/presentation/screens/home_page.dart';
+import 'package:gallery_app/features/gallery/presentation/bloc/image_bloc.dart';
+import 'package:gallery_app/features/gallery/presentation/bloc/image_events.dart';
+import 'package:gallery_app/features/gallery/presentation/bloc/image_states.dart';
+import 'package:gallery_app/features/gallery/presentation/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());

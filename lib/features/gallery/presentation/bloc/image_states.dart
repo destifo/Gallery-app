@@ -1,4 +1,4 @@
-import 'package:gallery_app/data/models/image_meta.dart';
+import 'package:gallery_app/features/gallery/data/models/image_meta.dart';
 
 abstract class ImageState {}
 
